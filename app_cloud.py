@@ -301,6 +301,10 @@ def initialize_cloud_session():
     """Restore the browser's anonymous session, or create one on first visit."""
     client = create_client(SUPABASE_URL, SUPABASE_KEY)
     saved_session = cookies.get("supabase_session")
+    st.caption(
+        f"Диагностика сессии: "
+        f"{'найдена' if saved_session else 'не найдена'}"
+    )
 
     if saved_session:
         try:
@@ -345,7 +349,8 @@ def initialize_cloud_session():
 
     return client, str(session.user.id)
 
-
+if not cookies.ready():
+    st.stop()
 if (
     "cloud_supabase" not in st.session_state
     or "cloud_user_id" not in st.session_state
