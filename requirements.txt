@@ -1,0 +1,9 @@
+
+streamlit
+groq
+python-dotenv
+supabase
+streamlit-cookies-manager
+extra-streamlit-components
+cryptography
+requests
