@@ -1,6 +1,0 @@
-
-streamlit
-groq
-python-dotenv
-supabase
-streamlit-cookies-manager
