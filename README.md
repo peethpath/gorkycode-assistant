@@ -180,10 +180,4 @@ py -m streamlit run app.py
 py -m pip install -r requirements.txt
 ```
 
----
 
-## Автор проекта
-
-**GorkyCode Assistant**
-
-Проект разработан в рамках хакатона GorkyCode.
